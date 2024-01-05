@@ -9,7 +9,10 @@ const Search = (props: { pageHeadText: string }) => {
       <Link href="/">
         <Logo headText={props.pageHeadText} />
       </Link>
+      <form className="flex-grow">
       <Searchbar />
+      <input type="submit" className=" hidden" />
+      </form>
     </div>
   );
 }
