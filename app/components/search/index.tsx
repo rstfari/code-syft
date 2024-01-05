@@ -18,7 +18,7 @@ export default function Search(props: { pageHeadText: string }) {
 
     if (!term) return;
 
-    router.push(`/searchpage?term=${term}`)
+    router.push(`/results?term=${term}`)
   };
 
   return (
