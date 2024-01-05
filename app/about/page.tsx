@@ -1,14 +1,20 @@
 "use client";
-import Foot from "../components/footer";
+import React from "react";
+import Logo from "../components/search/logo";
+import Link from "next/link";
 import Navigation from "../components/navigation";
-import Search from "../components/search";
+import Foot from "../components/footer";
 
-export default function About() {
+const About = () => {
   return (
-    <div className="bg-zinc-900 h-screen flex flex-col  items-center">
+    <div className="flex flex-col h-screen items-center">
       <Navigation />
-      <Search pageHeadText="About" />
+      <Link href="/">
+        <Logo headText="About"/>
+      </Link>
       <Foot />
     </div>
-  );
-}
+  )
+};
+
+export default About;
