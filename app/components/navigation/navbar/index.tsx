@@ -8,7 +8,7 @@ const Navbar = () => {
       <Link href="/news">News</Link>
       <Link href="/profile">Profile</Link>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;

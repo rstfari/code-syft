@@ -1,8 +1,6 @@
-"use client"
-import Navigation from "../components/navigation"
-import Search from "../components/search"
-
-
+"use client";
+import Navigation from "../components/navigation";
+import Search from "../components/search";
 
 export default function About() {
   return (
@@ -10,5 +8,5 @@ export default function About() {
       <Navigation />
       <Search pageHeadText="About" />
     </div>
-  )
+  );
 }
