@@ -8,7 +8,7 @@ const Searchbar = () => {
 </svg>
 
     <input
-      className="flex-grow outline-none bg-transparent"
+      className="flex-grow outline-none bg-transparent text-gray-300"
       type="search"
       id="searchbar"
     />
