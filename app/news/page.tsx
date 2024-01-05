@@ -4,7 +4,7 @@ import Search from "../components/search";
 
 export default function News() {
   return (
-    <div>
+    <div className="bg-zinc-900 h-screen flex flex-col  items-center">
       <Navigation />
       <Search pageHeadText="News" />
     </div>
