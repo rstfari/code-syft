@@ -8,7 +8,7 @@ const Profile = () => {
   return (
     <div className="flex flex-col h-screen items-center">
       <Navigation />
-      <Link href="/">
+      <Link href="/" className="p-2">
         <Logo headText="Profile"/>
       </Link>
       <Foot />
