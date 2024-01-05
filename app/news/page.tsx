@@ -1,7 +1,14 @@
-import React from "react";
+"use client"
+import Navigation from "../components/navigation"
+import Search from "../components/search"
 
-const News = () => {
-  return <div>News</div>;
-};
 
-export default News;
+
+export default function News() {
+  return (
+    <div>
+      <Navigation />
+      <Search pageHeadText="News" />
+    </div>
+  )
+}

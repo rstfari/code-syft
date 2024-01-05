@@ -1,6 +1,6 @@
-const Logo = () => {
+const Logo = (props: { headText: string }) => {
   return (
-    <h1 className=" text-7xl text-gray-300">code-syft/</h1>
+    <h1 className=" flex-grow text-7xl text-gray-300">code-syft/{props.headText}/</h1>
   )
 }
 

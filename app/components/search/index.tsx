@@ -3,10 +3,10 @@ import Searchbar from "./searchbar";
 import Logo from "./logo";
 import Link from "next/link";
 
-const Search = () => {
+const Search = (props: { pageHeadText: string }) => {
   return (
     <div className="flex space-x-1 p-2 w-full items-center">
-      <Link href="/"><Logo /></Link>
+      <Link href="/"><Logo headText={props.pageHeadText}/></Link>
       <Searchbar />
     </div>
   )

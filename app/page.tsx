@@ -1,9 +1,14 @@
-import Image from 'next/image'
+"use client"
+import Navigation from './components/navigation'
+import Search from './components/search'
+
+
 
 export default function Home() {
   return (
-    <>
-    {/* move navbar here */}
-    </>
+    <div>
+      <Navigation />
+      <Search pageHeadText="Search" />
+    </div>
   )
 }

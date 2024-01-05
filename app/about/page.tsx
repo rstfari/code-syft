@@ -1,7 +1,14 @@
-import React from "react";
+"use client"
+import Navigation from "../components/navigation"
+import Search from "../components/search"
 
-const About = () => {
-  return <div>About</div>;
-};
 
-export default About;
+
+export default function About() {
+  return (
+    <div>
+      <Navigation />
+      <Search pageHeadText="About" />
+    </div>
+  )
+}
