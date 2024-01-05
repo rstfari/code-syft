@@ -1,6 +1,6 @@
 import React from "react";
 
-const Searchbar = () => {
+const Searchbar = (props: {searchInput: any}) => {
   return (
     <div className="flex h-9 mt-1 w-full bg-transparent rounded-full px-3 hover:shadow-lg focus-within:shadow-lg items-center outline outline-gray-300" >
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 mr-3 text-gray-300">
@@ -11,6 +11,7 @@ const Searchbar = () => {
       className="flex-grow outline-none bg-transparent text-gray-300"
       type="search"
       id="searchbar"
+      ref={props.searchInput}
     />
     </div>
   );
