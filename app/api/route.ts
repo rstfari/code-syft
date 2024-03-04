@@ -8,7 +8,7 @@ export async function GET(request) {
 
   const search = searchParams.get("term");
   const res = await fetch(
-    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${search}`,
+    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${search}&start=${startingIndex}`,
   );
   const data = await res.json();
 
