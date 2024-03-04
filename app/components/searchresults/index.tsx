@@ -23,7 +23,7 @@ export default function SearchResults({results}) {
           </div>
         ))}
 
-        <PaginationButtons />
+        {/* <PaginationButtons /> */}
     </div>
   );
 };
