@@ -2,8 +2,6 @@ import { API_KEY, CONTEXT_KEY } from "./keys";
 import { useSearchParams } from "next/navigation";
 
 export async function GET(request) {
-  const useDummyData = false;
-
   const searchParams = request.nextUrl.searchParams;
 
   const search = searchParams.get("term");
